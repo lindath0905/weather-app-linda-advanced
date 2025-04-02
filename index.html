@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linda's weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            id="city-search-input"
+            class="city-search-input"
+            type="search"
+            placeholder="Search for a city.."
+            required
+            autofocus
+          />
+          <input type="submit" value="Search" class="city-search-button" />
+        </form>
+      </header>
+      <br />
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 id="city">Vienna</h1>
+            <p id="weather-app-details">
+              <span id="time"></span>, <span id="weather-condition"></span
+              ><br />Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+
+          <div id="temperature-container">
+            <span id="emoji"></span>
+            <span id="temperature"></span>
+            <div id="unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <br />
+      <footer>
+        This project was coded by
+        <a
+          href="https://github.com/lindath0905/weather-app-linda"
+          target="_blank"
+          >Linda Thurner</a
+        >
+        , is
+        <a
+          href="https://github.com/lindath0905/weather-app-linda"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and
+        <a href="https://weather-app-linda-th.netlify.app/" target="_blank"
+          >hosted on Netlify
+        </a>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
