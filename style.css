@@ -4,7 +4,7 @@ body {
 
 #weather-app {
   background: #fff5e3;
-  margin: 50px auto;
+  margin: 70px auto 0;
   max-width: 600px;
   padding: 40px;
   border-radius: 18px;
@@ -83,7 +83,7 @@ strong {
 }
 
 .weather-forecast-icon {
-  font-size: 38px;
+  width: 80%;
   padding: 12px 0;
 }
 
@@ -99,6 +99,7 @@ strong {
 }
 
 footer {
+  text-align: center;
   font-size: 14px;
   color: rgba(39, 33, 66, 0.6);
 }
